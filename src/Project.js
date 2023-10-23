@@ -1,11 +1,10 @@
 import Task from './Task';
-import TaskGroup from './TaskGroup';
+import TodoList from './TodoList';
 
 function Project(initialValues) {
   return {
     ...Task({ title: initialValues.title }),
-
-    ...TaskGroup(),
+    ...TodoList(),
   };
 }
 
