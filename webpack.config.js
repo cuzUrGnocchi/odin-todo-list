@@ -30,10 +30,10 @@ module.exports = {
   devServer: {
     devMiddleware: {
       index: true,
+      publicPath: './',
       mimeTypes: {
         phtml: 'text/html',
       },
-      publicPath: '/dist',
       serverSideRender: true,
       writeToDisk: true,
     },
